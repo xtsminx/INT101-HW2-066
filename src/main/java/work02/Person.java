@@ -1,4 +1,8 @@
 package work02;
+import work01.Utilitor;
+
+import java.util.Objects;
+
 public class Person {
     private static int nextId = 1;
     private int id;
@@ -13,7 +17,7 @@ public class Person {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Person(id=").append(id).append(", firstname=").append(firstname).append(", lastname=").append(lastname).append(")");
+        sb.append("Person (id= ").append(id).append(", firstname = ").append(firstname).append(", lastname = ").append(lastname).append(" )");
         return sb.toString();
     }
 
